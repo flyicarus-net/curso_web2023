@@ -1,0 +1,24 @@
+/* Coincide con el primer
+elemento <p> */
+
+p:first-child {
+    font-weight: bold;
+    color: blue;
+}
+
+/* Coincide con el primer
+elemento <i> en todos
+los elementos <p> */
+
+p i:first-child {
+    color:red
+}
+
+/* Coincide con todos los
+elementos <i> en
+todos los elementos
+<p> del primer hijo */
+
+p:first-child i {
+    color: orange;
+    }
