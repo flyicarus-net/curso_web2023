@@ -1,0 +1,68 @@
+/* pseudo elemento before y after */
+p::after {
+    content: " ... ";
+    color: red;
+    font-weight: bold;
+}
+
+p::before {
+    content: "- ";
+    color: red;
+    font-weight: bold;
+}
+
+
+/* pseudo elemento first letter */
+
+h1::first-letter {
+    font-size: 55px;
+    font-weight: 900;
+}
+
+h2::first-letter {
+    font-weight: 700;
+}
+
+
+/* pseudo elemento first line */
+p::first-line {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    background-color: rgb(228, 222, 221);
+}
+
+/* pseudo elemento marker (listas) */
+ul li::marker {
+    content: " ** ";
+    color: red;
+
+}
+
+ol li::marker {
+    font-size: 22px;
+    color: rgb(164, 15, 15);
+}
+
+/* pseudo elemento selection */
+::selection {
+    color: orange;
+    background-color: black;
+}
+
+/* selector de atributo */
+a[href="sarasa.com"] {
+    color: red;
+    background-color: yellow;
+}
+
+/* selector de atributo con virgulilla (contiene una palabra especifica) */
+[title~="abc"] {
+color: red;
+}
+
+/* selector [atributo | = "valor"] (comienza con... palabra completa */
+[class|="jorge"] {
+    color: green;
+    background-color: red;
+}
+
