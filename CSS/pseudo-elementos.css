@@ -1,12 +1,13 @@
 /* pseudo elemento before y after */
-p::after {
-    content: " ... ";
+
+h1, h2::before {
+    content: "- ";
     color: red;
     font-weight: bold;
 }
 
-p::before {
-    content: "- ";
+h3::after {
+    content: " ... ";
     color: red;
     font-weight: bold;
 }
@@ -14,7 +15,7 @@ p::before {
 
 /* pseudo elemento first letter */
 
-h1::first-letter {
+p::first-letter {
     font-size: 55px;
     font-weight: 900;
 }
@@ -33,7 +34,7 @@ p::first-line {
 
 /* pseudo elemento marker (listas) */
 ul li::marker {
-    content: " ** ";
+    content: " . ";
     color: red;
 
 }
@@ -44,25 +45,33 @@ ol li::marker {
 }
 
 /* pseudo elemento selection */
-::selection {
-    color: orange;
-    background-color: black;
-}
-
-/* selector de atributo */
-a[href="sarasa.com"] {
-    color: red;
-    background-color: yellow;
-}
-
-/* selector de atributo con virgulilla (contiene una palabra especifica) */
-[title~="abc"] {
-color: red;
-}
-
-/* selector [atributo | = "valor"] (comienza con... palabra completa */
-[class|="jorge"] {
-    color: green;
+.uno::selection {
+    color: white;
     background-color: red;
 }
+
+
+
+
+
+
+
+/* selector de atributo */
+/* a[href="sarasa.com"] {
+    color: red;
+    background-color: yellow;
+} */
+
+/* selector de atributo con virgulilla (contiene una palabra especifica) */
+/* [title~="abc"] {
+color: red;
+} */
+
+/* selector [atributo | = "valor"] (comienza con... palabra completa */
+/* [class|="jorge"] {
+    color: green;
+    background-color: red;
+} */
+
+
 
