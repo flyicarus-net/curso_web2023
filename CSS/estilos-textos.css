@@ -1,0 +1,56 @@
+h1 {
+    color: blue;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 1.5em;
+    font-family: Roboto;
+}
+.p2 {
+    color: chocolate;
+    font-size: 1.5em;
+    font-family: Roboto;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.p3 {
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 45px;
+    letter-spacing: -3px;
+    word-spacing: 5px;
+}
+
+.shadow {
+    text-shadow: 2px 2px 4px gray;
+}
+.div1 {
+    padding: 25px;
+    background-color: blue;
+    color: white;
+}
+
+.div2 {
+    background-color: green;
+    color: white;
+    padding: 10px 45px 10px 45px;
+}
+
+.div3 {
+    width: 30%;
+    margin:20px;
+    background-color: gray;
+    color: white;
+    display: inline-block;
+
+}
+.div4 {
+    width: 30%;
+    margin:20px;
+    background-color: lightblue;
+    display: inline-block;
+        
+}

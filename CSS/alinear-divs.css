@@ -1,0 +1,17 @@
+div {
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    border: 3px solid red;
+    padding: 4px;
+    border-radius: 100%;
+    float: left;
+    font-size: 38px;
+    text-align: center;
+    font-family: helvetica;
+    margin-right: 4px;
+    margin-top: 4px;
+    color: yellow;
+    font-weight: 900;
+    background-color: blueviolet;
+}
