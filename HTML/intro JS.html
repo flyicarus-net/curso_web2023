@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+        .button {
+            background-color: black;
+            color: white;
+        }
+        #cambia {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            font-weight: 900;
+        }
+    </style>
+    
+</head>
+<body>
+
+<h1>Que puede hacer JavaScript?</h1>
+
+<p id="cambia">JavaScript puede cambiar el contenido
+HTML.</p>
+
+<button class="button" type="button"
+onclick='document.getElementById("cambia").innerHTML =
+"Hola! Este texto ha cambiado gracias a JavaScript."'>cambiar</button>
+<button type="button"
+onclick='document.getElementById("cambia").innerHTML =
+"JavaScript puede cambiar el contenido"'>volver</button>
+</body>
+
+</html>
