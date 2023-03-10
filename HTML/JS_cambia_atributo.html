@@ -1,35 +1,43 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
+    <!-- JAVASCRIPT EN URL EXTERNA -->
+    <script src="https://web2023.sigocupacio.com/wp-content/uploads/2023/03/miCodigoJavaScript.js"></script>
+
+    <!-- JAVASCRIPT EN ARCHIVO EXTERNO -->
+    <script src="../JS/cambia_atributo.js"></script>
+
+    <!-- JAVASCRIPT EN EL HEAD -->
+    <!-- <script>
+        function cambiaParrafo() {
+
+            document.getElementById("cambia").innerHTML =
+                "Párrafo cambiado";
+        }
+    </script> -->
     <style>
         .button {
             background-color: black;
             color: white;
         }
-
         p {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-size: 25px;
             font-weight: 900;
         }
     </style>
-
 </head>
-
 <body>
-
     <h1> Que puede hacer JavaScript?</h1>
-
     <p id="estilo">JavaScript puede cambiar atributos HTML como en este caso el
         src de una imagen</p>
     <img id="mar" src="../img/flecha_abajo.png" style="height:85px">
     </BR>
+
+     <!-- JAVASCRIPT INLINE -->
     <button class="button" onclick="document.getElementById('mar').src='../img/flecha_abajo.png'">Muestra una
         flecha</button>
     <button onclick="document.getElementById('mar').src='../img/flecha_arriba.png'">U otra Flecha</button>
-
     </br> </br>
     <button class="button" type="button" onclick="document.getElementById('estilo').style.fontSize='35px'">FUENTE
         GRANDE</button>
@@ -38,16 +46,24 @@
     </br> </br>
     <button class="button" type="button" onclick="document.getElementById('estilo').style.color='red'">texto
         ROJO</button>
-    <button class="button" type="button" onclick="document.getElementById('estilo').style.color='BLUE'">texto
+
+    <!-- LLAMANDO A FUNCION EN JS EXTERNO -->
+    <button class="button" type="button" onclick="cambiaColor()">texto
         AZUL</button>
     </br> </br>
-    <button class="button" type="button"
-        onclick="document.getElementById('estilo').style.textAlign='right'">DERECHA</button>
+    <button class="button" type="button" onclick="alineaDerecha()">DERECHA</button>
     <button class="button" type="button"
         onclick="document.getElementById('estilo').style.textAlign='left'">IZQUIERDA</button>
     </br> </br>
     <button onclick="document.getElementById('mar').style.display='none'">OCULTA</button>
-    <button onclick="document.getElementById('mar').style.display='block'">MUESTRA</button>
+    <button onclick="muestraFlecha()">MUESTRA</button>
+
+    <h1>JavaScript en el HEAD</h1>
+
+    <p id="cambia">Un párrafo cualquiera</p>
+    <!-- LLAMA A FUNCION EN HEAD -->
+    <button type="button" onclick="cambiaParrafo()">Cambia
+        (texto botón)</button>
 </body>
 
 </html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Escribimos con Document.Write</h1>
+    <h2>Subtitular</h2>
+    <p>Aquí escribiremos
+        texto:</p>
+    
+    <!-- DOCUMENT.WRITE OUTPUT -->
+    <script>
+        document.write("Bon diaaa!");
+    </script>
+    
+        <!-- OUTPUT EN ELEMENTO CON ID EN HTML -->
+        <h1>Resultado de una suma OUTPUT</h2>
+        <p>La suma de 3+3 es:</p>
+        <p id="suma"></p>
+        <script>
+            document.getElementById("suma").innerHTML = 3 + 3;
+        </script>
+    
+        <!-- OUTPUT CON WINDO.ALERT -->
+        <script>
+            window.alert("Hola! Esto es un alerta de Javascript, y saldrá siempre al cargar el documento");
+        </script>
+    
+        <!-- OUTPUT EN CONSOLA -->
+        <h1>Escritura en la CONSOLA del navegador</h1>
+        <p>Para activar ?Inspeccionar Elemento? pulsa F12.</p>
+        <script>
+            console.log("Escribiendo en consola");
+        </script>
+    
+        <!-- OUTPUT PARA IMPRIMIR EL DOCUMENTO -->
+        <h1>Utilización del Método window.print()</h1>
+        <p>Haga clic en el botón para imprimir la página actual.</p>
+        <button onclick="window.print()">Imprimir esta
+            página</button>
+</body>
+
+</html>
