@@ -1,0 +1,1 @@
+document.getElementById("demo10").innerHTML = Math.sqrt(9);

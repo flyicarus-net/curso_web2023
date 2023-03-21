@@ -1,0 +1,42 @@
+<html>
+
+<body>
+<!-- WHILE -->
+<h2>JavaScript While</h2>
+<p id="demo"></p>
+
+
+<script>
+        var text = "";
+        var i = 15;
+
+        while (i <= 25) {
+
+            text += "<br>El número es " + i;
+
+            i=i+2;
+
+        }
+
+        document.getElementById("demo").innerHTML = text;
+</script>
+
+
+<!-- FOR -->
+<h2>JavaScript For</h2>
+<p id="demo1"></p>
+
+<script>
+        var t = "", i;
+        for (i = 6; i >= 1; i--) {
+
+            t = t + "<h" + i + ">Titular " + i + "</h" + i + ">";
+
+        }
+
+        document.getElementById("demo1").innerHTML = t;
+
+    </script>
+</body>
+
+</html>

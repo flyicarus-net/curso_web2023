@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+    <h2>JavaScript Matriz-Arrays</h2>
+
+    <p>Los índices de matriz están basados ??desde el cero,
+        lo
+        que significa que el primer elemento es [3].</p>
+
+    <p id="demo"></p>
+
+    <p>Este es un array de 3 filas por 2 columnas, ahora mostrando [2][1] </p>
+    <p style="font-weight: 800;" id="demo2"></p>
+    <p style="font-weight: 800;" id="demo3"></p>
+
+
+    <script>
+        // BICICLETAS
+        var bici = ["BH", "Orbea", "Specialized"];
+
+        for (let i = 0; i < bici.length; i++) {
+            console.log(bici[i]);
+
+        }
+
+        document.getElementById("demo").innerHTML = bici;
+
+
+        // COCHES
+        var notas = [[1, "Volvo"], [2, "Mercedes"], [3, "Audi"]];
+
+        for (let i = 0; i < notas.length; i++) {
+            console.log(notas[i]);
+
+        }
+
+        document.getElementById("demo2").innerHTML =
+            notas;
+
+
+        // LENGUAJES
+        var t = "";
+        var lenguajes = ["html", "css", "javascript"]
+        
+        for (let i = 0; i < lenguajes.length; i++) {
+            console.log(lenguajes[i]);
+            t += lenguajes[i] + " ";
+        }
+
+        document.getElementById("demo3").innerHTML = t;
+
+    </script>
+
+</body>
+
+</html>

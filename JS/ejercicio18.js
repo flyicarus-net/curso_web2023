@@ -1,0 +1,1 @@
+document.getElementById("demo8").innerHTML = Math.max(0, 150, 30, 20, -8);
