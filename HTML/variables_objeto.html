@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+    <h2>JavaScript Objeto</h2>
+    <p id="demo"></p>
+
+
+<h2>Propiedades y Metodos</h2>
+<p id="Objeto"></p>
+    <script>
+
+        var persona = {
+
+            nombre: "John",
+            apellido: "Smith",
+            edad: 53,
+            "color ojos": "azules"
+
+        };
+
+        document.getElementById("demo").innerHTML =
+            persona.nombre + " " + persona.apellido + " tiene " + persona.edad + " años" + " y sus ojos son " + persona["color ojos"] + ".";
+
+
+// Ejemplo de Objeto con propiedades y metodos (funciones)
+        var person = { 
+            // Objeto
+            firstName: "John",
+            lastName: "Doe", // Propiedades
+            id: 5566,
+            fullName: function () { // Método
+                return "Nombre: " + this.firstName + " " + "<br>Apellido: " + this.lastName + "<br>Id: " + this.id;
+            }
+
+        };
+        //Llamamos al Metodo creado dentro del objeto
+        document.getElementById("Objeto").innerHTML = person.fullName();
+
+
+//Encontrar el tipo de una variable
+console.log(typeof "John Doe"); 
+console.log(typeof (3.14)); //El 1º devuelve string el 2º number
+console.log(person)
+
+    </script>
+
+</body>
+
+</html>
