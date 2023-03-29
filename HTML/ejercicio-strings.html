@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript String</h1>
+<h2>The charAt() Method</h2>
+
+<p>The charAt() method returns the character at a given position in a string:</p>
+
+<p id="texto"></p>
+
+<script>
+var texto1 = "dsjakds ds  tre re jakd";
+var texto2 = "dsjdsd dsad d3 d35 yth akd";
+var inicial1 = texto1.charAt(0);
+var inicial2 = texto2.charAt(0);
+
+if (inicial1 == inicial2) {
+    document.getElementById("texto").innerHTML = "Las iniciales son iguales";
+    console.log(inicial1, inicial2)
+} else {
+    document.getElementById("texto").innerHTML = "Las iniciales no son iguales"  + " " + inicial1 + " y " + inicial2;
+    console.log(inicial1, inicial2)
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Method </title>
+</head>
+
+<body>
+    <h1>REPLACE</h1>
+    <button onclick="myFunction()">Cambiar Texto</button>
+    <p id="parrafo">Lorem ipsum, placer sit amet consectetur adipisicing elit. Quod optio aliquam error asperiores minus perferendis exercitationem rem paax eum. Impedit temporibus nemo laudantium perferendis, repellat ab molestiae placer. Distinctio, itaque!<br> Lorem ipsum placer sit amet consectetur adipisicing elit. Nisi exercitationem expedita commodi ad amore, assumenda accusamus voluptatum delectus illum obcaecati deleniti deserunt. Placeres qui ex eum possimus laboriosam porro consequuntur.</p>
+
+    <script>
+        function myFunction() {
+            let text = document.getElementById("parrafo").innerHTML;
+            document.getElementById("parrafo").innerHTML =
+                text.replace("Lorem ipsum", "<strong>Castelldefels mola todo el año</strong>");
+        }
+    </script>
+
+<h1>REPLACE ALL</h1>
+<button onclick="myFunction1()">Cambiar Texto</button>
+<p id="parrafo1">Lorem ipsum, placer sit amet consectetur adipisicing elit. Quod optio aliquam error asperiores minus perferendis exercitationem rem paax eum. Impedit temporibus nemo laudantium perferendis, repellat ab molestiae placer. Distinctio, itaque!<br> Lorem ipsum placer sit amet consectetur adipisicing elit. Nisi exercitationem expedita commodi ad amore, assumenda accusamus voluptatum delectus illum obcaecati deleniti deserunt. Placeres qui ex eum possimus laboriosam porro consequuntur. <br> Lorem ipsum placer sit amet consectetur adipisicing elit. Nisi exercitationem expedita commodi ad amore, assumenda accusamus voluptatum delectus illum obcaecati deleniti deserunt. Placeres qui ex eum possimus laboriosam porro consequuntur.</p>
+<script>
+    function myFunction1() {
+        let text = document.getElementById("parrafo1").innerHTML;
+        document.getElementById("parrafo1").innerHTML =
+            text.replaceAll("Lorem ipsum", "<strong>Castelldefels mola todo el año</strong>");
+    }
+</script>
+
+    
+</body>
+
+</html>
